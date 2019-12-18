@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    width: 880px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    background-color: black;
+}
+
+.main {
+    width: 880px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.history {
+    width: 200px;
+    box-sizing: border-box;
+    height: 640px;
+    background-color: darkorange;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: darkcyan;
+}
+
+.history-entry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.history-entry span:nth-child(1) {
+    width: 60px;
+}
+
+.history-entry span:nth-child(2) {
+    width: 50px;
+
+}.history-entry span:nth-child(3) {
+    width: 50px;
+}
+
+.history img {
+    vertical-align: bottom;
+    width: 32px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.main-block {
+    width: 480px;
+    height: 640px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-image: url('../img/sphinx.png');
+    background-repeat: no-repeat;
+    background-size: 480px;
+    background-position: center;
+    background-color: darkorange;
+    padding-top: 350px;
+    position: relative;
+}
+
+.guess {
+    margin: 0 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.guess-digit {
+    width: 50px;
+    height: 70px;
+    background-color: darkcyan;
+    color: #fff;
+    font-family: Arial;
+    font-size: 50px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.guess-digit:hover {
+    cursor: ns-resize;
+}
+
+.lose {
+    background-color: red;
+    color: black;
+}
+
+.win {
+    background-color: gold;
+    color: green;
+}
+
+.guess-controls {
+    display: none;
+    width: 50px;
+    height: 70px;
+    color: #fff;
+    font-family: Arial;
+    font-size: 50px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.try-btn {
+    display: block;
+    margin: 50px auto;
+    outline: none;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    width: 150px;
+    text-align: center;
+    background-color: darkred;
+    color: orange;
+    border-color: orange;
+}
+
+.red-eyes {
+    background-color: orangered;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 110px;
+    left: 187px;
+}
+
+.right {
+    left: 268px;
+}
+
+.invisible {
+    display: none;
+    transition: ease display 500ms;
+}
+
+.popup {
+    position: absolute;
+    width: 200px;
+    top: 425px;
+    left: 140px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: lightyellow;
+    border: 6px double red;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.popup-text {
+    display: block;
+    color: maroon;
+    margin-bottom: 5px;
+}
+
+.popup-btn {
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    width: 150px;
+    text-align: center;
+    background-color: darkred;
+    color: orange;
+    border-color: orange;
+}
+
+.footer {
+    clear: both;
+    width: 880px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #555;
+
+}
+
+.hint {
+    color: gold;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.copyright {
+    color: #ccc;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 14px;
+    text-align: right;
+}
