@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bulls & Cows</title>
+</head>
+<body>
+    <header>
+        <h1>Bulls & Cows</h1>
+    </header>
+    <main class="main">
+        <div class="history left"></div>
+        <div class="history right"></div>
+        <div class="main-block">
+            <div class="guess">
+                <button class="guess-controls" name="guess-adjust" data-number=1 data-inc=1>&uparrow;</button>
+                <button class="guess-controls" name="guess-adjust" data-number=2 data-inc=1>&uparrow;</button>
+                <button class="guess-controls" name="guess-adjust" data-number=3 data-inc=1>&uparrow;</button>
+                <button class="guess-controls" name="guess-adjust" data-number=4 data-inc=1>&uparrow;</button>
+            </div>
+            <div class="guess user">
+                <span name="1th" class="guess-digit"></span>
+                <span name="2th" class="guess-digit"></span>
+                <span name="3th" class="guess-digit"></span>
+                <span name="4th" class="guess-digit"></span>
+            </div>
+            <div class="guess">
+                <button class="guess-controls" name="guess-adjust" data-number=1 data-inc=-1>&downarrow;</button>
+                <button class="guess-controls" name="guess-adjust" data-number=2 data-inc=-1>&downarrow;</button>
+                <button class="guess-controls" name="guess-adjust" data-number=3 data-inc=-1>&downarrow;</button>
+                <button class="guess-controls" name="guess-adjust" data-number=4 data-inc=-1>&downarrow;</button>
+            </div>
+            <button class="try-btn" name="guess-submit">Try! (10)</button>
+            <div class="red-eyes invisible"></div>
+            <div class="red-eyes right invisible"></div>
+            <div class="popup invisible">
+                <span class="popup-text"></span>
+                <button class="popup-btn" name="popup-btn">New game</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="hint">Hint: To alter the digits use the mouse scroll. To submit the number push the button.</div>
+        <div class="copyright">&copy; 2019 GB & GB</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
